@@ -1,0 +1,135 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-number {
+    outline: none;
+    border: none;
+    font-size: 35px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.control {
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    width: 300px;
+    padding: 3px 1px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.btn-number {
+    width: 90px;
+    font-size: 15px;
+    padding: 10px 7px;
+    border-radius: 20px;
+    margin: 3px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.juego {
+    display: flex;
+    height: 80%;
+}
+
+.btn-empezar {
+    background-color: rgb(0, 161, 221);
+    border: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn-empezar:hover {
+    background-color: rgb(2, 132, 179);
+}
+
+.btn-borrar {
+    border: none;
+    color: rgb(255, 12, 12);
+    font-size: 40px;
+    background-color: transparent;
+}
+
+.btn-borrar:hover {
+    color: rgb(191, 12, 12);
+}
+
+.comandos {
+    width: 28%;
+    height: 100%;
+    font-size: 20px;
+    background-color: rgb(51, 51, 50);
+    color: rgb(235, 236, 238);
+    display: flex;
+    align-items: center;
+}
+
+.mesa {
+    width: 72%;
+    background-image: url("../assets/fondo.svg");
+    background-size: 100%;
+    position: relative;
+}
+
+.btn-ingresar {
+    background-color: rgb(62, 202, 97);
+    border: none;
+    color: white;
+}
+
+.btn-number:hover {
+    background-color: rgb(230, 230, 230);
+    ;
+}
+
+.btn-ingresar:hover {
+    background-color: rgb(30, 96, 45);
+}
+
+.ayuda {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(109, 109, 109);
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.globo {
+    width: 170px;
+    height: 170px;
+    border: 4px solid red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    background-color: rgb(255, 251, 251);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-reiniciar{
+    border: 2px solid rgb(111, 111, 111);
+    background-color:transparent;
+    border-radius: 20px;
+    padding: 10px 50px;
+    display: none;
+}
+.btn-reiniciar:hover{
+    background-color:rgb(199, 196, 196)
+}
+@media screen and (max-width: 450px) {
+    .mesa{
+        display: none;
+    }
+    .comandos{
+        width: 100%;
+    }
+    
+}

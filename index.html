@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Juego de Globos</title>
+</head>
+
+<body>
+    <div class="container vh-100">
+        <audio id="mySoundBien">
+            <source src="./assets/bubble-gum-pop (mp3cut.net).mp3" type="audio/mpeg">
+          </audio>          
+        <audio id="mySoundError">
+            <source src="./assets/Efecto de sonido - Error (mp3cut.net).mp3" type="audio/mpeg">
+          </audio>          
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>Juego de Globos</h1>
+            <button class="btn-reiniciar" onclick="reiniciar()">Iniciar nuevamente</button>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between fs-2 detalles">
+            <div class="vidas"></div>
+            <div class="puntos"></div>
+        </div>
+        <div class="juego">
+
+            <div class="comandos">
+                <div>
+                    <div class="m-2 text-center">
+                        Responde al problema de cada globo y pulsa "Enter" antes de que llegue a la parte superior de la
+                        pantalla
+                    </div>
+                    <div class="text-center">
+                        <button class="btn-empezar" onclick="animar()">Entiendo. Comenzar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mesa">
+
+                <div class="control">
+                    <div class="d-flex my-2 bg-white mx-1">
+                        <input type="text" class="w-100 mx-2 input-number" value="0">
+                        <button class="btn-borrar" onclick="borrar()"><i
+                                class="fa-sharp fa-solid fa-delete-left fs-2"></i></button>
+                    </div>
+                    <div class="text-center botones">
+                        <button class="btn-number" onclick="escribirNum('7')">7</button>
+                        <button class="btn-number" onclick="escribirNum('8')">8</button>
+                        <button class="btn-number" onclick="escribirNum('9')">9</button>
+                        <button class="btn-number" onclick="escribirNum('4')">4</button>
+                        <button class="btn-number" onclick="escribirNum('5')">5</button>
+                        <button class="btn-number" onclick="escribirNum('6')">6</button>
+                        <button class="btn-number" onclick="escribirNum('1')">1</button>
+                        <button class="btn-number" onclick="escribirNum('2')">2</button>
+                        <button class="btn-number" onclick="escribirNum('3')">3</button>
+                        <button class="btn-number" onclick="escribirNum('0')">0</button>
+                        <button class="btn-number" onclick="escribirNum('.')">.</button>
+                        <button class="btn-number btn-ingresar" onclick="responder()">Ingresar</button>
+                    </div>
+                    <div class="ayuda">
+                        Utiliza el teclado para una entrada más rapida
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
